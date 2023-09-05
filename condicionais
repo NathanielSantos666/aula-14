@@ -1,0 +1,149 @@
+//CONDICIONAIS (if / else)
+//o IF é executado quando a condição for TRUE
+//o ELSE é executado quando a condição for FALSE
+//--------------------------------------------------
+
+// let condição = true;
+
+// if (condição) {
+//     console.log('uga!!!!!')
+// }
+
+// let condição2 = false;
+
+// if (condição2) {
+//     console.log('uga :(')
+// }
+//--------------------------------------------------
+
+//EXERCICIO 1
+// function numeros(numero1, numero2) {
+//     numero1 = Number(prompt('insira um numero'));
+//     numero2 = Number(prompt('insira outro numero'));
+//     return numero1 === numero2;
+// }
+
+// if (numeros()) {
+//     console.log('esses numeros são iguais! :)')
+// }
+//--------------------------------------------------
+
+//RESPOSTA
+// function recebeDoisNumeros(num1, num2) {
+//     if (num1 === num2) {
+//         return 'esses numeros são iguais!';
+//     }
+// }
+// console.log(
+//     recebeDoisNumeros(
+//         Number(prompt('digite um numero')),
+//         Number(prompt('digite outro numero'))
+//     )
+// );
+//--------------------------------------------------
+
+//EXERCICIO 2
+// function testeDirigir (nome, idade) {
+//     if (idade >= 18) {
+//         return `${nome}, voce pode dirigir.`
+//     } else {
+//         return `${nome}, voce não pode dirigir.`
+//     }
+// }
+// console.log(
+//     testeDirigir(
+//         prompt('Qual o seu nome?'),
+//         Number(prompt('Quantos anos voce tem?'))
+//     )
+// );
+//--------------------------------------------------
+
+//EXERCICIO 3 (o exercicio 1 mas com else)
+// function numeros(num1, num2) {
+//     if (num1 === num2) {
+//         return 'esses números são iguais!'
+//     } else {
+//         return 'esses números são diferentes!'
+//     }
+// }
+// console.log(
+//     numeros(
+//         Number(prompt('Insira um número.')),
+//         Number(prompt('Agora, insira outro número.'))
+//     )
+// );
+//--------------------------------------------------
+
+//EXERCICIO 4
+// function numeros(num1, num2) {
+//     if (num1 === num2) {
+//         return 'O primeiro número é igual ao segundo!'
+//     } else if (num1 > num2) {
+//         return 'O primeiro número é maior que o segundo!'
+//     } else {
+//         return 'O primeiro número é menor que o segundo'
+//     }
+    
+// }
+// console.log(
+//     numeros(
+//         Number(prompt('Insira um número.')),
+//         Number(prompt('Agora, insira outro número.'))
+//     )
+// );
+//--------------------------------------------------
+
+//SWITCH CASE
+// let paisDeOrigem
+// switch (paisDeOrigem) {
+//     case 'Brasil':
+//         console.log('Brasileiro')
+//         break
+//     case 'EUA':
+//         console.log('norte-americano')
+//         break
+//     case 'Inglaterra':
+//         console.log('Ingles')
+//         break
+//     case 'Africa':
+//         console.log('Africano')
+//         break
+//     default:
+//         console.log('nacionalidade não encontrada')
+//         break   
+// }
+//--------------------------------------------------
+
+//EXERCICIO 5
+// let pokemon = prompt('escolha o seu inicial da gen 1 favorito');
+// switch (pokemon) {
+//     case 'Bulbasauro':
+//         console.log('Voce escolheu o Bulbasauro! Sua tipagem é: Planta e Veneno')
+//         break
+//     case 'Charmander':
+//         console.log('Voce escolheu o Charmander! Sua tipagem é: Fogo')
+//         break
+//     case 'Squirtle':
+//         console.log('Voce escolheu o Squirtle! Sua tipagem é: Àgua')
+//         break
+//     default:
+//         console.log('Esse pokemon não é da gen 1 :(')
+//         break
+// }
+//--------------------------------------------------
+
+//EXERCIOCIO 6
+function faculdade(ensinoMedio, idade, outraFaculdade) {
+    if (ensinoMedio === 'sim' && idade > 18 && outraFaculdade === 'não') {
+        return 'Voce pode entrar em uma faculdade!'
+    } else {
+        return 'Voce não pode entrar em uma faculdade ainda.'
+    }
+}
+console.log(
+    faculdade(
+        prompt('Voce já finalizou o ensino médio?').toLowerCase(),
+        Number(prompt('Quantos anos voce tem?')),
+        prompt('Voce cursa outra faculdade?').toLowerCase()
+    )
+);
